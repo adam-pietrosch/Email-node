@@ -5,8 +5,8 @@ var transporter = nodemailer.createTransport({
     port: 465,
     secure: true, // upgrade later with STARTTLS
     auth: {
-        user: "adampiet@email.cz",
-        pass: "pietrosch.223"
+        user: "<email>",
+        pass: "<password>"
     },
     tls: {
         // do not fail on invalid certs
@@ -24,8 +24,8 @@ transporter.verify(function (error, success) {
 });*/
 
 var mailOptions = {
-    from: 'adampiet@email.cz',
-    to: 'adampiet@seznam.cz',
+    from: '<email>',
+    to: '<email>',
     subject: 'Sending Email using Node.js',
     text: 'That was easy!'
 };
